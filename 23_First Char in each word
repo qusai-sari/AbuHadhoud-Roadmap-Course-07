@@ -6,9 +6,7 @@ using namespace std;
 string readTxt(string message)
 {
 	string s;
-
 	cout << "\n" << message;
-	
 	getline(cin, s);
 
 	return s;
@@ -16,24 +14,20 @@ string readTxt(string message)
 
 void printFirstChars(string s)
 {
-	bool isCatch = 1;
-	cout << "\nThose are the first characters of each word:\n";
-	for (char ch : s)
-	{
-		if (isCatch)
-		{
-			cout << ch << "\n";
-			isCatch = 0;
-		}
-		if (ch == ' ')
-			isCatch = 11;
-	}
+	if (s[0] != ' ')
+		cout << s[0] << "\n";
+
+	unsigned strLen = s.length();
+	for (int i = 0; i < strLen; ++i)
+		if (s[i] == ' ' && (i + 1) < strLen)
+			cout << s[i + 1] << "\n";
 }
 
 int main()
 {
 	string txt = readTxt("Enter your text: ");
 
+	cout << "\nThose are the first characters of each word:\n";
 	printFirstChars(txt);
 	return 0;
 }
