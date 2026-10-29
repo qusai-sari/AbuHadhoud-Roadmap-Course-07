@@ -18,7 +18,7 @@ string readTxt(string message) {
 	return in;
 }
 
-string replaceWord(string str, string word, string replaceTo, bool isCaseSens = 1)
+string replaceWord(string str, const string& word, const string& replaceTo, bool isCaseSens = 1)
 {
 	int pos;
 	string str1 = str;
@@ -37,7 +37,7 @@ string replaceWord(string str, string word, string replaceTo, bool isCaseSens = 
 
 int main()
 {
-	string txt = "Qusai, Be a real Muslim, be an effective Muslim, who worships God in every dead in thier life. Qusai by the willingness of god you can do it.";
+	string txt = "Qusai, Be a real Muslim, be an effective Muslim, who worships God in every dead in his life. Qusai by the willingness of god, you can do it.";
 	
 	cout << "The original text:\n" << txt << "\n\n";
 

@@ -20,7 +20,7 @@ char invertChar(char ch)
 	return ch;
 }
 
-string invertAllLetters(string txt)
+string invertAllLetters(const string& txt)
 {
 	for (char& ch : txt)
 		ch = invertChar(ch);

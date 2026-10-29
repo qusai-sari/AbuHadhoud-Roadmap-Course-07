@@ -20,7 +20,7 @@ void upperFirstChars(string& s)
 	{
 		if (isCatch)
 		{
-			if ((int)ch >= 97)
+			if ((int)ch >= 97 && (int)ch <= 122)
 				ch -= 32;
 			isCatch = 0;
 		}

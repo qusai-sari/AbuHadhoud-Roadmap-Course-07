@@ -13,7 +13,7 @@ string readTxt(string message, bool isLine = 0) {
 	return in;
 }
 
-unsigned short countChInTxt(const string& txt, char requiredCh, bool isCaseSensitive = 1)
+unsigned short countChInTxt(const string& txt, char requiredCh, bool isCaseSensitive = 0)
 {
 	unsigned short counter = 0;
 

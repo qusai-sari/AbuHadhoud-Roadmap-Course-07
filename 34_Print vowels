@@ -19,7 +19,6 @@ bool isVowel(char ch)
 
 void printVowels(const string& s)
 {
-	int count = 0;
 	for (const char& ch : s)
 		if (isVowel(ch))
 			cout << ch << "\t";

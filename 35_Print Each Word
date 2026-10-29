@@ -17,7 +17,10 @@ void printWords(const string& s)
 	for (const char& ch : s)
 	{
 		if (ch == ' ')
+		{
 			cout << "\n";
+			continue;
+		}
 		cout << ch;
 	}
 }

@@ -19,8 +19,10 @@ void printFirstChars(string s)
 
 	unsigned strLen = s.length();
 	for (int i = 0; i < strLen; ++i)
+	{
 		if (s[i] == ' ' && (i + 1) < strLen)
 			cout << s[i + 1] << "\n";
+	}
 }
 
 int main()
